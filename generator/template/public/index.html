@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>seed</title>
+    <script>
+      //埋点
+      var _czc = _czc || [];
+      _czc.push(['_setAccount', '1277140204']);
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but seed doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <script>
+      if (/micromessenger/.test(navigator.userAgent.toLowerCase())) {
+        document.write(
+          unescape(
+            '%3Cscript  src=https://res.wx.qq.com/open/js/jweixin-1.4.0.js%3E%3C/script%3E'
+          )
+        );
+      }
+    </script>
+    <!-- built files will be auto injected -->
+    <script>
+      var cnzz_protocol =
+        'https:' == document.location.protocol ? ' https://' : ' http://';
+      document.write(
+        unescape(
+          "%3Cspan style='display:none' id='cnzz_stat_icon_1277140204'%3E%3C/span%3E%3Cscript async src='" +
+            cnzz_protocol +
+            "s4.cnzz.com/z_stat.php%3Fid%3D1277140204' %3E%3C/script%3E"
+        )
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "useConfigFiles": true,
+  "router": true,
+  "vuex": false,
+  "routerHistoryMode": false,
+  "cssPreprocessor": "scss",
+  "plugins": {
+    "@vue/cli-plugin-babel": {},
+    "@vue/cli-plugin-eslint": {
+      "config": "recommended",
+      "lintOn": ["save", "commit"]
+    }
+  },
+  "configs": {
+    "devServer": {
+      "open": true,
+
+      "host": "127.0.0.1",
+
+      "https": false,
+
+      "hotOnly": false,
+
+      "proxy": null
+    }
+  }
+}
