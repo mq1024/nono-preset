@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-<% if (options.vuex) { %>
-  import store from './store'
-  <% } %>
 
 import mzView from './components/mz-view/view.vue';
 import Modal from './components/modal/index';
@@ -20,8 +17,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  <%_ if (options.vuex) { _%>
-    store,
-    <%_ } _%>
+
   render: h => h(App)
 }).$mount('#app');
