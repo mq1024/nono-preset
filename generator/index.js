@@ -2,7 +2,6 @@ module.exports = (api, options, rootOptions) => {
   api.extendPackage({
     dependencies: {
       axios: '^0.18.0',
-      'core-js': '^2.6.5',
       'js-md5': '^0.7.3',
       qs: '^6.7.0'
     },
