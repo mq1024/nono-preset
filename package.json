@@ -2,7 +2,7 @@
   "name": "vue-cli3-custom-template",
   "version": "1.0.0",
   "description": "\"Custom templates for Vue CLI 3\"",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

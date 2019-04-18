@@ -7,5 +7,46 @@
 
   "plugins": {
     "@vue/cli-plugin-babel": {}
+  },
+  "configs": {
+    "vue": {
+      "publicUrl": "./",
+      "css": {
+        "modules": false,
+        "sourceMap": false,
+        "loaderOptions": {
+          "sass": {
+            "data": "@import '@/sass/variable.scss';"
+          }
+        }
+      },
+      "productionSourceMap": false,
+      "transpileDependencies": [],
+      "configureWebpack": {},
+      "devServer": {
+        "host": "localhost",
+        "port": 3001,
+        "hot": true,
+        "hotOnly": false,
+        "open": true,
+        "https": false,
+        "overlay": {
+          "warnings": false,
+          "errors": true
+        }
+      }
+    },
+    "eslintConfig": {
+      "globals": {
+        "WebViewJavascriptBridge": true,
+        "wx": true,
+        "_czc": true
+      },
+      "rules": {
+        "generator-star-spacing": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "no-tabs": "off"
+      }
+    }
   }
 }

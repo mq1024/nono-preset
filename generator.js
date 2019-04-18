@@ -15,5 +15,5 @@ module.exports = (api, options, rootOptions) => {
     });
     // api.render('./template/vuex');
   }
-  api.render('./template');
+  api.render('./generator/template');
 };

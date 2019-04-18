@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
     <title>seed</title>
     <script>
       //埋点
@@ -15,11 +19,11 @@
   <body>
     <noscript>
       <strong
-        >We're sorry but seed doesn't work properly without JavaScript enabled.
-        Please enable it to continue.</strong
+        >很抱歉，如果没有启用JavaScript，此项目将无法正常运行。请启用它。</strong
       >
     </noscript>
     <div id="app"></div>
+    <% if (options.wx){%>
     <script>
       if (/micromessenger/.test(navigator.userAgent.toLowerCase())) {
         document.write(
@@ -29,7 +33,9 @@
         );
       }
     </script>
+    <%} %>
     <!-- built files will be auto injected -->
+    <%if(options.cnzz){%>
     <script>
       var cnzz_protocol =
         'https:' == document.location.protocol ? ' https://' : ' http://';
@@ -41,5 +47,6 @@
         )
       );
     </script>
+    <%}%>
   </body>
 </html>
