@@ -14,7 +14,7 @@
   },
   "configs": {
     "vue": {
-      "publicUrl": "./",
+      "publicPath": "./",
       "css": {
         "modules": false,
         "sourceMap": false,
