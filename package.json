@@ -1,0 +1,24 @@
+{
+  "name": "vue-cli3-custom-template",
+  "version": "1.0.0",
+  "description": "\"Custom templates for Vue CLI 3\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mq1024/vue-cli3-preset.git"
+  },
+  "keywords": [
+    "vue",
+    "axios",
+    "scss"
+  ],
+  "author": "maqian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mq1024/vue-cli3-preset/issues"
+  },
+  "homepage": "https://github.com/mq1024/vue-cli3-preset#readme"
+}

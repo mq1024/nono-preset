@@ -4,6 +4,5 @@ module.exports = [
     type: 'confirm',
     message: '是否需要使用 vuex',
     default: false
-  },
-  {}
+  }
 ];
