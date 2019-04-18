@@ -11,9 +11,12 @@
     <meta content="email=no" name="format-detection" />
     <title>seed</title>
     <script>
+       <%if(options.cnzz){%>
       //埋点
       var _czc = _czc || [];
-      _czc.push(['_setAccount', '1277140204']);
+
+      _czc.push(['_setAccount', <%=options.cnzzSid%>]);
+      <%}%>
     </script>
   </head>
   <body>
@@ -23,8 +26,9 @@
       >
     </noscript>
     <div id="app"></div>
-    <% if (options.wx){%>
+
     <script>
+      <% if (options.wx){%>
       if (/micromessenger/.test(navigator.userAgent.toLowerCase())) {
         document.write(
           unescape(
@@ -32,21 +36,23 @@
           )
         );
       }
+      <%} %>
     </script>
-    <%} %>
+
     <!-- built files will be auto injected -->
-    <%if(options.cnzz){%>
+
     <script>
+      <%if(options.cnzz){%>
       var cnzz_protocol =
         'https:' == document.location.protocol ? ' https://' : ' http://';
       document.write(
         unescape(
-          "%3Cspan style='display:none' id='cnzz_stat_icon_1277140204'%3E%3C/span%3E%3Cscript async src='" +
+          "%3Cspan style='display:none' id='cnzz_stat_icon_<%= options.cnzzSid%>'%3E%3C/span%3E%3Cscript async src='" +
             cnzz_protocol +
-            "s4.cnzz.com/z_stat.php%3Fid%3D1277140204' %3E%3C/script%3E"
+            "s4.cnzz.com/z_stat.php%3Fid%3D<%= options.cnzzSid%>' %3E%3C/script%3E"
         )
       );
+      <%}%>
     </script>
-    <%}%>
   </body>
 </html>

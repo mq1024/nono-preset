@@ -16,5 +16,11 @@ module.exports = [
     type: 'confirm',
     message: '是否需要友盟埋点',
     default: false
+  },
+  {
+    name: 'cnzzSid',
+    type: prev => (prev ? 'text' : null),
+    message: '请输入cnzz站点sid：',
+    default: ''
   }
 ];

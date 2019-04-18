@@ -13,7 +13,7 @@ module.exports = (api, options, rootOptions) => {
         vuex: '^3.0.1'
       }
     });
-    // api.render('./template/vuex');
+    api.render('./template/vuex');
   }
-  api.render('./generator/template');
+  api.render('./generator/template/basic');
 };
