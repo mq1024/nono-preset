@@ -6,10 +6,9 @@
   "cssPreprocessor": "sass",
 
   "plugins": {
-    "@vue/cli-service": {},
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
-      "config": "standard",
+      "config": "prettier",
       "lintOn": ["save"]
     }
   },
