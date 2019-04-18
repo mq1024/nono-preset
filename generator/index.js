@@ -17,9 +17,4 @@ module.exports = (api, options, rootOptions) => {
     // api.render('./template/vuex');
   }
   api.render('./template');
-  // api.render({
-  //   './.eslintrc.js': './template/_eslintrc.js',
-  //   './.gitignore': './template/_gitignore',
-  //   './.browserslistrc': './template/_browserslistrc'
-  // });
 };
